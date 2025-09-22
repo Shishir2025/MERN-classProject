@@ -1,26 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h2>Fill the form</h2>
+    <form
+      action="mailto:ccrwork@outlook.com"
+      method="post"
+      enctype="text/plain"
+    >
+      <label for="username">Username:</label>
+      <input id="username" type="text" placeholder="John9" name="username" />
 
-<h3>Form </h3>    
-    <form action="">
-         <label for="username"  > Username :</label>
-         <input id="username" type="text">
-         <br>
-         <br>
-         <label for="email">Email:</label>
-         <input type="email" id=" email">
+      <br />
+     <br>
 
+      <label for="email">Email:</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <input id="email" name="email" placeholder="@example.com" type="email" />
 
+      <br />
+      <h3>Select Your Gender</h3>
+
+      <label for="male">Male</label>
+      <input type="radio" value="male" id="male" name="gender" />
+      <label for="female">Female</label>
+      <input type="radio" value="female" id="female" name="gender" />
+
+      <br />
+      <h3>Select Your Habits</h3>
+      <label for="dance">Dance</label>
+      <input type="checkbox" id="dance" value="dance" name="habits" />
+      <label for="reading">Reading</label>
+      <input type="checkbox" id=" reading" value="reading" name="habits" />
+
+      <label for="sing">Sing</label>
+      <input type="checkbox" id="sing" value="sing" name="habits" />
+
+      <br />
+      <br />
+      <label for="country">Select Your Country </label>
+      <select name="country" id="country">
+        <option value="nepal">Nepal</option>
+        <option value="china">Bhutan</option>
+        <option value="bangaladesh">Bangaladesh</option>
+        <option value="srilangka">Sri Lanka</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="india">India</option>
+        <option value=" maldives">Maldives</option>
+      </select>
+      <br />
+      <br />
+      <textarea
+        cols="40"
+        rows="10"
+        name="feedback"
+        placeholder="FeedBack"
+        id="feedback"
+      ></textarea>
+
+      <br />
+      <br />
+      <button>Submit</button>
     </form>
-
-
-
-
-</body>
+  </body>
 </html>
